@@ -46,6 +46,24 @@
 	}
 	add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
+	/**
+	 * Register our sidebars and widgetized areas.
+	 *
+	 */
+	function arphabet_widgets_init() {
+	
+		register_sidebar( array(
+			'name'          => 'sidebar',
+			'id'            => 'sidebar_blog',
+			'before_widget' => '<div class="sidebar-module">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4>',
+			'after_title'   => '</h4>',
+		) );
+	
+	}
+	add_action( 'widgets_init', 'arphabet_widgets_init' );
+
 	function featureText(){
 
 		if(is_front_page()){

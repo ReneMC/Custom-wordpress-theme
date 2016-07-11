@@ -28,7 +28,7 @@ img {
     max-width: 100%;
 }
 
-.btn-default, #submit {
+.btn-default, #submit, #searchsubmit {
     background-color: #8393ca;
     border: 3px solid #ecf0f1;
     border-radius: 5px;
@@ -36,7 +36,7 @@ img {
     color: white;
 }
 
-.btn-default:hover, #submit {
+.btn-default:hover, #submit:hover, #searchsubmit:hover {
     background-color: #97689c;
 }
 
@@ -326,6 +326,13 @@ textarea#comment {
 
 #submit {
     width: 100%;
+}
+
+/* === SIDEBAR === */
+
+.sidebar-module input{
+    margin: 10px;
+    max-width: 100%;
 }
 
 
