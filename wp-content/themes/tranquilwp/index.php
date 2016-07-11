@@ -25,6 +25,9 @@
                     <?php the_category(', '); ?><br>
 
                     <?php the_excerpt(); ?>
+                    <a href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>" >
+                        <?php _e('Read more...');  ?>
+                    </a>
                 </div><!-- /.blog-post -->
 
                     <?php endwhile; else : ?>
@@ -33,8 +36,8 @@
 
                     <nav>
                         <ul class="pager">
-                            <li><a href="#">Previous</a></li>
-                            <li><a href="#">Next</a></li>
+                            <li><?php next_posts_link('Older Posts'); ?></li>
+                            <li><?php previous_posts_link('Newer Posts'); ?></li>
                         </ul>
                     </nav>
 

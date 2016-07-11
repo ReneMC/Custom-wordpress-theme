@@ -67,7 +67,7 @@
             <div class="row feature">
                 <img src="<?php echo esc_url(get_template_directory_uri() );?>/images/lakebg.jpg" alt="lake background">
                 <div class="feature-text col-xs-12 col-md-8 col-lg-6 col-md-offset-2 col-lg-offset-3">
-                    <p>SILENCE<br> IS GOLD.</p>
+                    <p><?php featureText(); ?></p>
                 </div><!-- /feature text -->
             </div><!-- /row -->
         </div><!-- /container fluid -->

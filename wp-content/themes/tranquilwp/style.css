@@ -220,11 +220,15 @@ i {
 
 /* === BLOG SECTION === */
 .blog-post-title {
-    background: url("../images/divider-purple.png") center no-repeat;
+    background: url("images/divider-purple.png") center no-repeat;
     height: 80px;
     background-size: 300px 40px;
     background-position: center 35px;
     margin-bottom: 30px;
+}
+
+.blog-post-title  a {
+    color: #494646;
 }
 
 .blog-post {

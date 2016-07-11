@@ -31,5 +31,27 @@
 
 	add_action('wp_enqueue_scripts', 'tranquilwp_scripts');
 
+	/**
+	 * Filter the excerpt "read more" string.
+	 * @param string $more "Read more" excerpt string.
+	 * @return string (Maybe) modified "read more" excerpt string.
+	 */
+	function wpdocs_excerpt_more( $more ) {
+		return '...';
+	}
+	add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+	function featureText(){
+
+		if(is_front_page()){
+
+			_e('SILENCE<br> IS GOLDEN.');
+
+		} else if(is_home()) {
+
+			_e('Official blog');
+
+		}
+	}
 
 ?>
