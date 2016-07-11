@@ -51,7 +51,20 @@
 
 		} else if(is_home() || is_single()) {
 
-			_e('Official blog');
+			_e('Official Blog');
+
+		} else if(is_archive()) {
+
+			_e('Official Blog');
+			_e('<br>');
+			single_term_title('Browsing: ');
+
+			if(is_month()){
+				$monthNum = get_query_var('monthnum');
+				$month = date("F", mktime(0, 0, 0, $monthNum));
+				$year = get_query_var('year');
+				echo 'Post from ' . $month . ' '. $year;
+			}
 
 		}
 	}
