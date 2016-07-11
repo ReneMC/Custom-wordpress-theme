@@ -7,6 +7,8 @@
 
 	function tranquilwp_setup (){
 
+		add_theme_support('post-thumbnails');
+
 		add_theme_support('automatic-feed-links');
 		add_theme_support('title-tag');
 
@@ -15,6 +17,7 @@
 
 		register_nav_menus( array(
 		    'primary' => __( 'Primary Menu', 'tranquilwp' ),
+			'footer' => __( 'Footer Menu', 'tranquilwp' ),
 		));
 	}
 
@@ -63,9 +66,14 @@
 				$monthNum = get_query_var('monthnum');
 				$month = date("F", mktime(0, 0, 0, $monthNum));
 				$year = get_query_var('year');
-				echo 'Post from ' . $month . ' '. $year;
+
+				echo 'Posts from ' . $month . ' '. $year;
 			}
 
+		} else if(is_page_template('page-news.php')){
+			bloginfo('name');
+			_e('<br>');
+			the_title();
 		}
 	}
 

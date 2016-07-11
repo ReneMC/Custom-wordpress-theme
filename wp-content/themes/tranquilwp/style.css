@@ -238,6 +238,11 @@ i {
     padding: 20px;
 }
 
+.blog-post img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
 /* === BLOG-SIDEBAR SECTION === */
 .sidebar-module {
     border: 1px solid #494646;

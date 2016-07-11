@@ -23,7 +23,7 @@
                         <?php _e( 'Category: '); ?>
                         <?php the_category(', '); ?><br>
                     </p>
-
+                    <?php the_post_thumbnail('large'); ?>
                     <?php the_excerpt(); ?>
                     <a href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>" >
                         <?php _e('Read more...');  ?>

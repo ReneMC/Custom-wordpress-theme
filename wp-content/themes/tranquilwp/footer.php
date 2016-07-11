@@ -18,12 +18,14 @@
                     </address>
                 </div>
                 <div class="col-sm-4">
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="">latest News</a></li>
-                    </ul>
+                    <?php
+                    wp_nav_menu( array(
+                        'menu'              => 'footer',
+                        'container'         => 'ul',
+                        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                        'walker'            => new wp_bootstrap_navwalker())
+                    );
+                    ?>
                 </div>
                 <div class="col-sm-4">
                     <p>Follow Us:</p>
