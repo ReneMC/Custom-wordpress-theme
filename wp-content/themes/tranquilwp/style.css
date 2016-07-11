@@ -28,7 +28,7 @@ img {
     max-width: 100%;
 }
 
-.btn-default {
+.btn-default, #submit {
     background-color: #8393ca;
     border: 3px solid #ecf0f1;
     border-radius: 5px;
@@ -36,7 +36,7 @@ img {
     color: white;
 }
 
-.btn-default:hover {
+.btn-default:hover, #submit {
     background-color: #97689c;
 }
 
@@ -281,6 +281,48 @@ i {
 .message-area {
     margin-top: 30px;
 }
+/* ===  BLOG SINGLE POST === */
+.blog-post-meta {
+    line-height: 2em;
+}
+
+/* ===  COMMENTS SECTION === */
+
+div#comments.comments-area {
+    border: 1px solid #494646;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.comment-body {
+    background: #eee;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+h2.comments-title {
+    background: url("images/divider-purple.png") center no-repeat;
+    height: 80px;
+    background-size: 300px 40px;
+    background-position: center 35px;
+    margin-bottom: 30px;
+}
+
+.comment-list {
+    margin-bottom: 60px;
+    border-bottom: 1px dashed;
+}
+
+textarea#comment {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#submit {
+    width: 100%;
+}
+
 
 /* ===  MOBILE STYLING === */
 @media screen and (max-width : 768px) {

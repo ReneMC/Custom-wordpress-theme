@@ -27,6 +27,8 @@
 
 		/* add scripts */
 		wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), true);
+
+		if (is_singular()) wp_enqueue_script('comment-reply');
 	}
 
 	add_action('wp_enqueue_scripts', 'tranquilwp_scripts');
@@ -47,7 +49,7 @@
 
 			_e('SILENCE<br> IS GOLDEN.');
 
-		} else if(is_home()) {
+		} else if(is_home() || is_single()) {
 
 			_e('Official blog');
 

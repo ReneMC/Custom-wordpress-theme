@@ -13,16 +13,16 @@
                         </a>
                     </h2>
                     <p class="blog-post-meta"><?php echo get_the_date('F, j, Y'); ?>
-                        <a href="#"> <?php the_author(); ?></a>
+                        <a href="#"> <?php the_author(); ?></a><br>
+
+                        <i class="fa fa-tag"></i>
+                        <?php _e( 'Tags: '); ?>
+                        <?php the_tags(', '); ?><br>
+
+                        <i class="fa fa-folder-open"></i>
+                        <?php _e( 'Category: '); ?>
+                        <?php the_category(', '); ?><br>
                     </p>
-
-                    <i class="fa fa-tag"></i>
-                    <?php _e( 'Tags: '); ?>
-                    <?php the_tags(); ?><br>
-
-                    <i class="fa fa-folder-open"></i>
-                    <?php _e( 'Category: '); ?>
-                    <?php the_category(', '); ?><br>
 
                     <?php the_excerpt(); ?>
                     <a href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>" >
