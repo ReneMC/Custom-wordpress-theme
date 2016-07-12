@@ -94,6 +94,13 @@
 			the_title();
 		} else if(is_404()){
 			_e("Whoops, we're a little lost");
+		} else if(is_search()){
+			_e('Official Blog');
+			_e('<br>');
+			/*
+			 * Using printf instead of _e(echo) because printf allows us to use the %s formatting
+			 */
+			printf(('Search results for: %s'), get_search_query());
 		}
 
 	}
