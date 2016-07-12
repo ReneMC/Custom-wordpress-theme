@@ -7,6 +7,8 @@
 
 	function tranquilwp_setup (){
 
+		load_thee_textdomain('tranquilwp', get_template_directory() . '/languages');
+
 		add_theme_support('post-thumbnails');
 
 		add_theme_support('automatic-feed-links');
