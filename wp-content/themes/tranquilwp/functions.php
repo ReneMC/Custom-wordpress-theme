@@ -88,7 +88,7 @@
 				echo 'Posts from ' . $month . ' '. $year;
 			}
 
-		} else if(is_page_template('page-news.php') || is_page_template('page-about.php')){
+		} else if(is_page_template('page-news.php') || is_page_template('page-about.php') || is_page_template('page-contact.php')){
 			bloginfo('name');
 			_e('<br>');
 			the_title();
