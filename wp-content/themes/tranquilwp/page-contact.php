@@ -34,24 +34,7 @@ get_header(); ?>
 
             <div class="row message-area">
                 <div class="col-sm-12">
-                    <div class="well">
-                        <form>
-                            <p>Send us a message...</p>
-                            <div class="form-group">
-                                <label class="sr-only" for="input-name">Name</label>
-                                <input type="text" class="form-control" id="input-name" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="input-email">Email</label>
-                                <input type="text" class="form-control" id="input-email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="input-message">Message</label>
-                                <textarea class="form-control" id="input-message" placeholder="Message" rows="3"></textarea>
-                            </div>
-                            <input type="submit" class="btn btn-default" value="Submit">
-                        </form>
-                    </div><!-- /well -->
+                    <?php echo do_shortcode('[contact-form-7 id="67" title="Contact form 1"]'); ?>
                 </div><!-- /col-sm-12 -->
             </div><!-- /row -->
         </div><!-- /container -->

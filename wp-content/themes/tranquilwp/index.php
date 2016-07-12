@@ -6,7 +6,7 @@
 
             <div class="col-sm-12 col-md-8 blog-main">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                <div class="blog-post">
+                <div class="blog-post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <h2 class="blog-post-title">
                         <a href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>" >
                             <?php the_title();  ?>
