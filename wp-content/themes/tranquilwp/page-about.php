@@ -18,11 +18,12 @@ get_header(); ?>
 
             <div class="row">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis dictum urna. Vestibulum id laoreet felis, sed molestie elit. Maecenas ultricies, nunc in scelerisque eleifend, ligula sapien venenatis lorem, id porta ipsum orci a arcu. Fusce placerat tellus eu odio commodo, at vestibulum nunc scelerisque. Integer a nisi gravida, vestibulum ex at, iaculis erat. Ut sodales tincidunt arcu, sed ornare turpis auctor feugiat. Duis eget aliquam risus. Mauris malesuada sapien a tortor porta tempus. Nunc blandit, elit at pharetra euismod, dui nibh lacinia ligula, et iaculis urna libero sit amet massa. Etiam volutpat commodo ex, vel molestie arcu sagittis non.
+                <?php // PAGE CONTENT
+                    the_field('section_contents');
+                ?>
                 </p>
-                <p>
-                    Nunc vel lectus vitae mauris posuere condimentum. Aliquam pharetra dui vulputate eleifend fermentum. Nulla facilisi. Aliquam iaculis quis mi vel efficitur. Donec rutrum magna eu lorem pharetra porta. Sed malesuada pulvinar lacus, id laoreet ex euismod eget. Etiam ac aliquet risus. Ut sed purus a metus tristique pulvinar ut eu sapien. Fusce consequat eros id diam dapibus, ac feugiat ligula rutrum. In non fermentum sem. Vivamus diam risus, facilisis in imperdiet eu, venenatis sit amet dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porta eget lacus sed mattis. Fusce auctor nisl arcu, non egestas velit malesuada dapibus. In sit amet diam orci. Phasellus aliquet enim vel porta tempus.
-                </p>
+                <a href="<?php the_field('file_upload'); ?>">File</a>
+
             </div>
 
             <div class="row facilities">
