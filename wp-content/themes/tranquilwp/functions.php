@@ -92,7 +92,10 @@
 			bloginfo('name');
 			_e('<br>');
 			the_title();
+		} else if(is_404()){
+			_e("Whoops, we're a little lost");
 		}
+
 	}
 
 ?>

@@ -335,6 +335,16 @@ textarea#comment {
     max-width: 100%;
 }
 
+/* === 404 PAGE === */
+
+.widget {
+    border: 1px solid #494646;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 20px;
+    min-height: 300px;
+}
+
 
 /* ===  MOBILE STYLING === */
 @media screen and (max-width : 768px) {
