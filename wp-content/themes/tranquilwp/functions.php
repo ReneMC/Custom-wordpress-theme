@@ -68,7 +68,7 @@
 
 		if(is_front_page()){
 
-			_e('SILENCE<br> IS GOLDEN.');
+			the_field('feature_text');
 
 		} else if(is_home() || is_single()) {
 
