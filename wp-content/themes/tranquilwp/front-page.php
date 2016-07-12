@@ -29,26 +29,26 @@
                    <div class="row">
                        <div class="col-sm-4">
                            <div class="offer">
-                               <span>$60</span>
-                               <h3>FAMILY <br>OFFER</h3>
-                               <p>Family Pool</p>
-                               <p>Great Day Out</p>
+                               <span>$<?php the_field('offer_price');?></span>
+                               <h3><?php the_field('offer_name');?></h3>
+                               <p><?php the_field('offer_line_1');?></p><hr>
+                               <p><?php the_field('offer_line_2');?></p><hr>
                            </div><!-- /offer -->
                        </div><!-- /col-sm-4 -->
                        <div class="col-sm-4">
                            <div class="offer">
-                               <span>$120</span>
-                               <h3>FOR THE <br>BRIDE</h3>
-                               <p>Hair &amp; Make Up</p>
-                               <p>Full Pamper Package</p>
+                               <span>$<?php the_field('offer_price_2');?></span>
+                               <h3><?php the_field('offer_name_2');?></h3>
+                               <p><?php the_field('offer_2_line_1');?></p><hr>
+                               <p><?php the_field('offer_2_line_2');?></p><hr>
                            </div><!-- /offer -->
                        </div><!-- /col-sm-4 -->
                        <div class="col-sm-4">
                            <div class="offer">
-                               <span>$90</span>
-                               <h3>WEEKEND <br>PASS</h3>
-                               <p>Modern Facilities</p>
-                               <p>Perfect Gift</p>
+                               <span>$<?php the_field('offer_price_3');?></span>
+                               <h3><?php the_field('offer_name_3');?></h3>
+                               <p><?php the_field('offer_3_line_1');?></p><hr>
+                               <p><?php the_field('offer_3_line_2');?></p><hr>
                            </div><!-- /offer -->
                        </div><!-- /col-sm-4 -->
                    </div><!-- /nested row -->
